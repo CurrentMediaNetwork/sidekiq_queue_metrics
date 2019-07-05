@@ -4,7 +4,7 @@ module Sidekiq::QueueMetrics
       chain.add Sidekiq::QueueMetrics::JobSuccessMonitor
     end
 
-    config.death_handlers << Sidekiq::QueueMetrics::JobDeathMonitor.proc
+    # config.death_handlers << Sidekiq::QueueMetrics::JobDeathMonitor.proc
   end
 
   def self.storage_location=(key)
